@@ -1,0 +1,156 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Evobike - Bicimotos eléctricas</title>
+  <meta name="description" content="Venta y financiamiento de bicimotos Evobike. Envíos, repuestos y red de distribuidores." />
+  <style>
+    :root{
+      --accent:#6b21a8; /* lila suave */
+      --dark:#111827;
+      --muted:#6b7280;
+      --card:#ffffff;
+      --glass: rgba(255,255,255,0.06);
+      font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
+    }
+    *{box-sizing:border-box}
+    body{margin:0;background:linear-gradient(180deg,#f7f6fb 0%,#ffffff 100%);color:var(--dark);}
+    .container{max-width:1100px;margin:32px auto;padding:20px}
+    header{display:flex;align-items:center;justify-content:space-between}
+    .brand{display:flex;gap:12px;align-items:center}
+    .logo{width:56px;height:56px;border-radius:12px;background:linear-gradient(135deg,var(--accent),#9f7aea);display:flex;align-items:center;justify-content:center;color:white;font-weight:700;font-size:20px}
+    h1{font-size:28px;margin:0}
+    p.lead{color:var(--muted);margin-top:6px}
+    .hero{display:grid;grid-template-columns:1fr 420px;gap:24px;margin-top:28px;align-items:center}
+    .card{background:var(--card);border-radius:12px;padding:20px;box-shadow:0 8px 24px rgba(15,15,15,0.06)}
+    .price{font-size:24px;color:var(--accent);font-weight:700}
+    .features{display:grid;grid-template-columns:repeat(2,1fr);gap:12px;margin-top:12px}
+    .feature{display:flex;gap:12px;align-items:flex-start}
+    .feature .dot{width:44px;height:44px;border-radius:10px;background:var(--glass);display:flex;align-items:center;justify-content:center;font-weight:700;color:var(--accent)}
+    .actions{display:flex;gap:12px;margin-top:16px}
+    .btn{padding:12px 16px;border-radius:10px;border:0;cursor:pointer;font-weight:600}
+    .btn-primary{background:var(--accent);color:white}
+    .btn-ghost{background:transparent;border:2px solid #eee}
+    .whatsapp{background:#25D366;color:white}
+    .grid-products{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:18px}
+    .prod{border-radius:10px;overflow:hidden;background:linear-gradient(180deg,#fff,#fbfaff);}
+    .prod img{width:100%;height:160px;object-fit:cover;display:block}
+    .prod .info{padding:10px}
+    footer{margin-top:32px;padding:18px 10px;border-top:1px solid #eee;color:var(--muted)}
+    @media (max-width:900px){
+      .hero{grid-template-columns:1fr}
+      .grid-products{grid-template-columns:repeat(2,1fr)}
+    }
+    @media (max-width:560px){
+      .grid-products{grid-template-columns:1fr}
+    }
+    .badge{display:inline-block;padding:6px 10px;border-radius:999px;background:rgba(107,33,168,0.08);color:var(--accent);font-weight:700}
+    .distribuidor{background:#fff7ff;border:1px solid rgba(159,122,234,0.12);padding:12px;border-radius:10px;margin-top:12px}
+    .small{font-size:13px;color:var(--muted)}
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="brand">
+        <div class="logo">EV</div>
+        <div>
+          <h1>Evobike - Bicimotos eléctricas</h1>
+          <div class="small">Movilidad urbana eficiente · Repuestos · Servicio técnico</div>
+        </div>
+      </div>
+      <div style="text-align:right">
+        <div class="badge">Envíos a todo el país</div>
+        <div class="small" style="margin-top:6px">¿Necesitas cotización rápida? <strong>WhatsApp</strong></div>
+      </div>
+    </header>
+
+    <section class="hero">
+      <div>
+        <div class="card">
+          <div style="display:flex;justify-content:space-between;align-items:start;gap:12px">
+            <div>
+              <h2 style="margin:0 0 6px 0">Bicimoto Águila • Modelo 2025</h2>
+              <p class="small">Autonomía: hasta 60 km | Velocidad máxima: 35 km/h | Garantía: 12 meses</p>
+            </div>
+            <div class="price">$3.450.000</div>
+          </div>
+
+          <div class="features">
+            <div class="feature"><div class="dot">⚡</div><div><strong>Batería extraíble</strong><div class="small">Recargable en tomas domésticas</div></div></div>
+            <div class="feature"><div class="dot">🛠</div><div><strong>Servicio técnico</strong><div class="small">Red nacional de talleres y repuestos</div></div></div>
+            <div class="feature"><div class="dot">🔋</div><div><strong>Monitoreo</strong><div class="small">Panel LED con indicador de batería</div></div></div>
+            <div class="feature"><div class="dot">🧰</div><div><strong>Accesorios</strong><div class="small">Parrilla, casco, seguro opcional</div></div></div>
+          </div>
+
+          <div class="actions">
+            <a class="btn btn-primary" href="mailto:ventas@evobike.com?subject=Cotización%20Bicimoto%20%C3%81guila">Solicitar cotización</a>
+            <a class="btn" href="#financiamiento">Opciones de financiamiento</a>
+            <a class="btn whatsapp" href="https://wa.me/571234567890?text=Hola%20%E2%9C%94%20quiero%20informaci%C3%B3n%20de%20la%20bicimoto%20%C3%81guila">WhatsApp</a>
+          </div>
+
+          <div class="small" style="margin-top:12px">También vendemos para distribuidores — <a href="#distribuidores">ver precios especiales</a>.</div>
+        </div>
+
+        <div class="card" style="margin-top:14px">
+          <h3 style="margin:0 0 8px 0">Galería rápida</h3>
+          <div class="grid-products">
+            <div class="prod"><img src="https://images.unsplash.com/photo-1502877338535-766e1452684a?q=80&w=800&auto=format&fit=crop&ixlib=rb-4.0.3&s=1" alt="bicimoto"><div class="info"><strong>Águila - frontal</strong><div class="small">Vista frontal y tablero</div></div></div>
+            <div class="prod"><img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?q=80&w=800&auto=format&fit=crop&ixlib=rb-4.0.3&s=2" alt="bicimoto-2"><div class="info"><strong>Águila - lateral</strong><div class="small">Diseño robusto</div></div></div>
+            <div class="prod"><img src="https://images.unsplash.com/photo-1519183071298-a2962be54a8b?q=80&w=800&auto=format&fit=crop&ixlib=rb-4.0.3&s=3" alt="bicimoto-3"><div class="info"><strong>Accesorios</strong><div class="small">Parrilla y casco</div></div></div>
+          </div>
+        </div>
+
+      </div>
+
+      <aside>
+        <div class="card">
+          <h3 style="margin:0 0 8px 0">Financiamiento y aliados</h3>
+          <p class="small">Si necesitas financiación, tenemos alternativas. Algunas plataformas requieren tienda física o e-commerce. Si aún no la tienes, podemos ofrecerte alternativas como: cotización por WhatsApp, planes de abono directo con nosotros, y orientación para cumplir requisitos de aliados financieros.</p>
+
+          <div id="financiamiento" style="margin-top:10px">
+            <strong>Opciones:</strong>
+            <ul class="small">
+              <li>Pago contado</li>
+              <li>Plan de cuotas con entidad aliada (sujeto a aprobación)</li>
+              <li>Reservas con abono inicial</li>
+            </ul>
+          </div>
+
+          <div class="distribuidor">
+            <strong>¿Quieres ser distribuidor?</strong>
+            <p class="small">Ofrecemos precios especiales, material POP y soporte logístico. <a href="#distribuidores">Solicita condiciones</a>.</p>
+            <a class="btn btn-primary" href="mailto:canales@evobike.com?subject=Registro%20Distribuidor">Quiero ser distribuidor</a>
+          </div>
+
+          <div style="margin-top:12px" class="card">
+            <h4 style="margin:0 0 6px 0">Contacto rápido</h4>
+            <p class="small">Tel: +57 1 234 567 890<br>WhatsApp: <a href="https://wa.me/571234567890">+57 1 234 567 890</a><br>Email: ventas@evobike.com</p>
+            <a class="btn btn-ghost" href="tel:+571234567890">Llamar ahora</a>
+          </div>
+        </div>
+      </aside>
+    </section>
+
+    <section id="distribuidores" style="margin-top:18px">
+      <div class="card">
+        <h3>Plan para distribuidores</h3>
+        <p class="small">Requisitos mínimos: identificación de la empresa, referencia comercial y espacio físico o registro de e-commerce (podemos asesorarte para obtenerlo). Ofrecemos condiciones en función del volumen.</p>
+        <ul class="small">
+          <li>Descuentos por unidad</li>
+          <li>Soporte postventa y repuestos</li>
+          <li>Entrega programada</li>
+        </ul>
+      </div>
+    </section>
+
+    <footer>
+      <div style="display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap">
+        <div>© Evobike 2025 · Todos los derechos reservados</div>
+        <div class="small">Diseñado para promocionar tus bicimotos. Edita textos, precios y contactos antes de publicar.</div>
+      </div>
+    </footer>
+  </div>
+</body>
+</html>
