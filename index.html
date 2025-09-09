@@ -70,6 +70,29 @@
     .whatsapp-btn:hover {
       background: #1ebe5d;
     }
+
+    /* Botón flotante WhatsApp */
+    .whatsapp-fixed {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background: #25D366;
+      color: white;
+      border-radius: 50%;
+      width: 60px;
+      height: 60px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 28px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+      text-decoration: none;
+      transition: 0.3s;
+      z-index: 1000;
+    }
+    .whatsapp-fixed:hover {
+      background: #1ebe5d;
+    }
   </style>
 </head>
 <body>
@@ -81,7 +104,7 @@
   <div class="container">
     <!-- VMP S5 -->
     <div class="card">
-      <img src="https://evobike.com.co/wp-content/uploads/2024/12/VMP-S5.jpg" alt="VMP S5">
+      <img src="s5.jpg" alt="VMP S5">
       <h2>VMP S5</h2>
       <p class="price">$2.100.000</p>
       <p class="desc">Diseño compacto ideal para ciudad. Motor 500W, autonomía hasta 40 km, frenos confiables y fácil recarga.</p>
@@ -90,7 +113,7 @@
 
     <!-- SOL -->
     <div class="card">
-      <img src="https://evobike.com.co/wp-content/uploads/2024/12/SOL.jpg" alt="SOL">
+      <img src="sol.jpg" alt="SOL">
       <h2>SOL</h2>
       <p class="price">$2.550.000</p>
       <p class="desc">Modelo versátil con batería de litio extraíble. Autonomía hasta 50 km, frenos de disco y diseño robusto.</p>
@@ -99,7 +122,7 @@
 
     <!-- RAYO -->
     <div class="card">
-      <img src="https://evobike.com.co/wp-content/uploads/2024/12/RAYO.jpg" alt="RAYO">
+      <img src="rayo.jpg" alt="RAYO">
       <h2>RAYO</h2>
       <p class="price">$3.450.000</p>
       <p class="desc">Potencia y velocidad en un diseño moderno. Motor 800W, autonomía de 60 km, ideal para trayectos más largos.</p>
@@ -108,7 +131,7 @@
 
     <!-- POLAR -->
     <div class="card">
-      <img src="https://evobike.com.co/wp-content/uploads/2024/12/POLAR.jpg" alt="POLAR">
+      <img src="polar.jpg" alt="POLAR">
       <h2>POLAR</h2>
       <p class="price">$4.200.000</p>
       <p class="desc">Gran rendimiento en todo terreno. Suspensión reforzada, batería de alto rendimiento y autonomía de 70 km.</p>
@@ -117,13 +140,25 @@
 
     <!-- ZEUS -->
     <div class="card">
-      <img src="https://evobike.com.co/wp-content/uploads/2024/12/ZEUS.jpg" alt="ZEUS">
+      <img src="zeus.jpg" alt="ZEUS">
       <h2>ZEUS</h2>
       <p class="price">$4.200.000</p>
       <p class="desc">Máxima potencia. Motor 1000W, batería de larga duración, autonomía de hasta 80 km y diseño imponente.</p>
       <a class="whatsapp-btn" href="https://wa.me/573053941982?text=Hola!%20Quiero%20más%20información%20sobre%20la%20bicimoto%20ZEUS">¡Quiero más info!</a>
     </div>
+
+    <!-- ÁGUILA -->
+    <div class="card">
+      <img src="aguila.jpg" alt="Águila">
+      <h2>Águila</h2>
+      <p class="price">$4.600.000</p>
+      <p class="desc">Modelo imponente y resistente. Diseño tipo motocicleta, motor potente y gran autonomía para recorridos largos.</p>
+      <a class="whatsapp-btn" href="https://wa.me/573053941982?text=Hola!%20Quiero%20más%20información%20sobre%20la%20bicimoto%20Águila">¡Quiero más info!</a>
+    </div>
   </div>
+
+  <!-- Botón flotante WhatsApp -->
+  <a class="whatsapp-fixed" href="https://wa.me/573053941982?text=Hola!%20Quiero%20más%20información%20sobre%20las%20bicimotos%20Evobike">💬</a>
 </body>
 </html>
 
