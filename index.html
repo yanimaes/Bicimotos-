@@ -11,48 +11,50 @@
       padding: 0;
       background: #f7f7f7;
       color: #333;
-      text-align: center;
     }
     header {
       background: #222;
       color: #fff;
       padding: 20px;
+      text-align: center;
     }
     header h1 {
       margin: 0;
     }
-
-    /* Carrusel */
-    .carousel {
-      position: relative;
-      max-width: 700px;
-      margin: 30px auto;
-      overflow: hidden;
-      border-radius: 12px;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+    .container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+      gap: 20px;
+      padding: 20px;
+      max-width: 1100px;
+      margin: auto;
     }
-    .slides {
-      display: flex;
-      transition: transform 0.6s ease;
-    }
-    .slide {
-      min-width: 100%;
-      box-sizing: border-box;
-      position: relative;
+    .card {
       background: #fff;
-      padding: 10px;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+      padding: 15px;
+      text-align: center;
     }
-    .slide img {
-      width: 100%;
+    .card img {
+      max-width: 100%;
       border-radius: 10px;
     }
-    .info {
-      margin-top: 10px;
+    .card h2 {
+      margin: 10px 0 5px 0;
+      font-size: 20px;
+      color: #222;
     }
     .price {
-      font-size: 20px;
+      font-size: 18px;
       font-weight: bold;
+      margin: 5px 0;
       color: #007BFF;
+    }
+    .desc {
+      font-size: 14px;
+      margin: 10px 0;
+      color: #555;
     }
     .whatsapp-btn {
       display: inline-block;
@@ -68,103 +70,60 @@
     .whatsapp-btn:hover {
       background: #1ebe5d;
     }
-
-    /* Botones */
-    .prev, .next {
-      position: absolute;
-      top: 50%;
-      transform: translateY(-50%);
-      background: rgba(0,0,0,0.5);
-      color: #fff;
-      border: none;
-      padding: 12px;
-      cursor: pointer;
-      border-radius: 50%;
-      font-size: 18px;
-    }
-    .prev { left: 10px; }
-    .next { right: 10px; }
   </style>
 </head>
 <body>
   <header>
     <h1>Bicimotos Evobike 🚲⚡</h1>
-    <p>Explora nuestros modelos y contáctanos directo por WhatsApp</p>
+    <p>Modelos disponibles - Contáctanos por WhatsApp</p>
   </header>
 
-  <div class="carousel">
-    <div class="slides">
-      <!-- Modelo VMP S5 -->
-      <div class="slide">
-        <img src="WhatsApp Image 2025-08-27 at 2.21.47 PM.jpeg" alt="VMP S5">
-        <div class="info">
-          <p class="price">VMP S5 - $2.100.000</p>
-          <a class="whatsapp-btn" href="https://wa.me/573053941982?text=Hola!%20Quiero%20más%20información%20sobre%20la%20bicimoto%20VMP%20S5">¡Quiero más info!</a>
-        </div>
-      </div>
-
-      <!-- Modelo SOL -->
-      <div class="slide">
-        <img src="WhatsApp Image 2025-08-27 at 2.21.47 PM (1).jpeg" alt="SOL">
-        <div class="info">
-          <p class="price">SOL - $2.550.000</p>
-          <a class="whatsapp-btn" href="https://wa.me/573053941982?text=Hola!%20Quiero%20más%20información%20sobre%20la%20bicimoto%20SOL">¡Quiero más info!</a>
-        </div>
-      </div>
-
-      <!-- Modelo RAYO -->
-      <div class="slide">
-        <img src="WhatsApp Image 2025-08-27 at 2.21.47 PM (2).jpeg" alt="RAYO">
-        <div class="info">
-          <p class="price">RAYO - $3.450.000</p>
-          <a class="whatsapp-btn" href="https://wa.me/573053941982?text=Hola!%20Quiero%20más%20información%20sobre%20la%20bicimoto%20RAYO">¡Quiero más info!</a>
-        </div>
-      </div>
-
-      <!-- Modelo POLAR -->
-      <div class="slide">
-        <img src="WhatsApp Image 2025-08-27 at 4.41.09 PM.jpeg" alt="POLAR">
-        <div class="info">
-          <p class="price">POLAR - $4.200.000</p>
-          <a class="whatsapp-btn" href="https://wa.me/573053941982?text=Hola!%20Quiero%20más%20información%20sobre%20la%20bicimoto%20POLAR">¡Quiero más info!</a>
-        </div>
-      </div>
-
-      <!-- Modelo ZEUS -->
-      <div class="slide">
-        <img src="WhatsApp Image 2025-08-27 at 4.41.09 PM (1).jpeg" alt="ZEUS">
-        <div class="info">
-          <p class="price">ZEUS - $4.200.000</p>
-          <a class="whatsapp-btn" href="https://wa.me/573053941982?text=Hola!%20Quiero%20más%20información%20sobre%20la%20bicimoto%20ZEUS">¡Quiero más info!</a>
-        </div>
-      </div>
+  <div class="container">
+    <!-- VMP S5 -->
+    <div class="card">
+      <img src="https://evobike.com.co/wp-content/uploads/2024/12/VMP-S5.jpg" alt="VMP S5">
+      <h2>VMP S5</h2>
+      <p class="price">$2.100.000</p>
+      <p class="desc">Diseño compacto ideal para ciudad. Motor 500W, autonomía hasta 40 km, frenos confiables y fácil recarga.</p>
+      <a class="whatsapp-btn" href="https://wa.me/573053941982?text=Hola!%20Quiero%20más%20información%20sobre%20la%20bicimoto%20VMP%20S5">¡Quiero más info!</a>
     </div>
 
-    <!-- Botones -->
-    <button class="prev" onclick="moveSlide(-1)">❮</button>
-    <button class="next" onclick="moveSlide(1)">❯</button>
+    <!-- SOL -->
+    <div class="card">
+      <img src="https://evobike.com.co/wp-content/uploads/2024/12/SOL.jpg" alt="SOL">
+      <h2>SOL</h2>
+      <p class="price">$2.550.000</p>
+      <p class="desc">Modelo versátil con batería de litio extraíble. Autonomía hasta 50 km, frenos de disco y diseño robusto.</p>
+      <a class="whatsapp-btn" href="https://wa.me/573053941982?text=Hola!%20Quiero%20más%20información%20sobre%20la%20bicimoto%20SOL">¡Quiero más info!</a>
+    </div>
+
+    <!-- RAYO -->
+    <div class="card">
+      <img src="https://evobike.com.co/wp-content/uploads/2024/12/RAYO.jpg" alt="RAYO">
+      <h2>RAYO</h2>
+      <p class="price">$3.450.000</p>
+      <p class="desc">Potencia y velocidad en un diseño moderno. Motor 800W, autonomía de 60 km, ideal para trayectos más largos.</p>
+      <a class="whatsapp-btn" href="https://wa.me/573053941982?text=Hola!%20Quiero%20más%20información%20sobre%20la%20bicimoto%20RAYO">¡Quiero más info!</a>
+    </div>
+
+    <!-- POLAR -->
+    <div class="card">
+      <img src="https://evobike.com.co/wp-content/uploads/2024/12/POLAR.jpg" alt="POLAR">
+      <h2>POLAR</h2>
+      <p class="price">$4.200.000</p>
+      <p class="desc">Gran rendimiento en todo terreno. Suspensión reforzada, batería de alto rendimiento y autonomía de 70 km.</p>
+      <a class="whatsapp-btn" href="https://wa.me/573053941982?text=Hola!%20Quiero%20más%20información%20sobre%20la%20bicimoto%20POLAR">¡Quiero más info!</a>
+    </div>
+
+    <!-- ZEUS -->
+    <div class="card">
+      <img src="https://evobike.com.co/wp-content/uploads/2024/12/ZEUS.jpg" alt="ZEUS">
+      <h2>ZEUS</h2>
+      <p class="price">$4.200.000</p>
+      <p class="desc">Máxima potencia. Motor 1000W, batería de larga duración, autonomía de hasta 80 km y diseño imponente.</p>
+      <a class="whatsapp-btn" href="https://wa.me/573053941982?text=Hola!%20Quiero%20más%20información%20sobre%20la%20bicimoto%20ZEUS">¡Quiero más info!</a>
+    </div>
   </div>
-
-  <script>
-    let currentIndex = 0;
-    const slides = document.querySelectorAll('.slide');
-    const totalSlides = slides.length;
-
-    function showSlide(index) {
-      const slidesContainer = document.querySelector('.slides');
-      if (index >= totalSlides) currentIndex = 0;
-      else if (index < 0) currentIndex = totalSlides - 1;
-      else currentIndex = index;
-      slidesContainer.style.transform = `translateX(-${currentIndex * 100}%)`;
-    }
-
-    function moveSlide(step) {
-      showSlide(currentIndex + step);
-    }
-
-    // Automático cada 4s
-    setInterval(() => moveSlide(1), 4000);
-  </script>
 </body>
 </html>
 
